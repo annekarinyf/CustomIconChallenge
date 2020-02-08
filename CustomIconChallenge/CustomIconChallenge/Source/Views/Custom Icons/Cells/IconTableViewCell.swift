@@ -15,26 +15,34 @@ final class IconTableViewCell: UITableViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var subtitleLabel: UILabel!
     
+    private var activityIndicator: UIActivityIndicatorView?
+    
     // MARK: - Cell loading and setup
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         setupCellLayout()
+        setupActivityIndicatorForImageView()
     }
     
     func setupCell(with icon: IconViewModel) {
         titleLabel.text = icon.title
         subtitleLabel.text = icon.subtitle
         
+        // Image downloading
+        activityIndicator?.startAnimating()
+        
         icon.getImage { [weak self] image in
             guard let strongSelf = self else { return }
             strongSelf.iconImageView.image = image
+            strongSelf.activityIndicator?.stopAnimating()
         }
     }
     
     // MARK: - Cell layout configuration
     private func setupCellLayout() {
         setupShadow()
-        setupBorder()
+        setupRoundedBorder()
     }
     
     private func setupShadow() {
@@ -48,7 +56,18 @@ final class IconTableViewCell: UITableViewCell {
         containerView.layer.shouldRasterize = true
     }
     
-    private func setupBorder() {
+    private func setupRoundedBorder() {
         containerView.layer.cornerRadius = 8
+    }
+    
+    // Setup activity indicador for image downloading
+    private func setupActivityIndicatorForImageView() {
+        activityIndicator = UIActivityIndicatorView(style: .medium)
+        activityIndicator?.hidesWhenStopped = true
+        activityIndicator?.center = iconImageView.center
+        activityIndicator?.stopAnimating()
+        
+        guard let indicatorView = activityIndicator else { return }
+        iconImageView.addSubview(indicatorView)
     }
 }
