@@ -13,4 +13,13 @@ enum NetworkError: Error {
     case invalidURL
     case unexpectedDataError
     case unknownError
+    
+    var errorMessage: String {
+        switch self {
+        case .internetUnavailable:
+            return NSLocalizedString("Internet Unavailable Message", comment: "Search description")
+        default:
+            return NSLocalizedString("Unknown Error Message", comment: "Search description")
+        }
+    }
 }
