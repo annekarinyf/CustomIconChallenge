@@ -12,6 +12,7 @@
 		DF0D800323EF153F00980EBE /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D800223EF153F00980EBE /* Icon.swift */; };
 		DF0D800823EF233F00980EBE /* IconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D800623EF233F00980EBE /* IconTableViewCell.swift */; };
 		DF0D800923EF233F00980EBE /* IconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0D800723EF233F00980EBE /* IconTableViewCell.xib */; };
+		DF18B20B23EF6B2000305570 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF18B20D23EF6B2000305570 /* Localizable.strings */; };
 		DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCF823EEE5410059860D /* AppDelegate.swift */; };
 		DFC7CCFD23EEE5420059860D /* CustomIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */; };
 		DFC7CD0023EEE5420059860D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CCFE23EEE5420059860D /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		DF0D800223EF153F00980EBE /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		DF0D800623EF233F00980EBE /* IconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTableViewCell.swift; sourceTree = "<group>"; };
 		DF0D800723EF233F00980EBE /* IconTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconTableViewCell.xib; sourceTree = "<group>"; };
+		DF18B20C23EF6B2000305570 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DFC7CCF523EEE5410059860D /* CustomIconChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomIconChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC7CCF823EEE5410059860D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIconsViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		DF18B20823EF6A6F00305570 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF18B20D23EF6B2000305570 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DFC7CCEC23EEE5410059860D = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 			children = (
 				DFC7CD0D23EEF5C00059860D /* Source */,
 				DFC7CD1023EEF63E0059860D /* Storyboards */,
+				DF18B20823EF6A6F00305570 /* Resources */,
 				DFC7CD0123EEE5440059860D /* Assets.xcassets */,
 				DFC7CD0623EEE5440059860D /* Info.plist */,
 			);
@@ -241,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF18B20B23EF6B2000305570 /* Localizable.strings in Resources */,
 				DFC7CD0523EEE5440059860D /* LaunchScreen.storyboard in Resources */,
 				DFC7CD0223EEE5440059860D /* Assets.xcassets in Resources */,
 				DF0D800923EF233F00980EBE /* IconTableViewCell.xib in Resources */,
@@ -275,6 +287,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DF18B20D23EF6B2000305570 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF18B20C23EF6B2000305570 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		DFC7CCFE23EEE5420059860D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
