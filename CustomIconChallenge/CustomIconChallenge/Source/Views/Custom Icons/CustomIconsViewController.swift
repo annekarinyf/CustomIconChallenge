@@ -26,7 +26,7 @@ final class CustomIconsViewController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.navigationBar.prefersLargeTitles = true
-        title = "Custom Icons"
+        title = NSLocalizedString("Custom Icons", comment: "View Title")
         
         customIconsTableView.register(UINib(nibName: cellID, bundle: nil), forCellReuseIdentifier: cellID)
         setupSearchController()
@@ -48,7 +48,7 @@ final class CustomIconsViewController: UIViewController {
         searchController = UISearchController(searchResultsController: nil)
         searchController?.searchResultsUpdater = self
         searchController?.obscuresBackgroundDuringPresentation = false
-        searchController?.searchBar.placeholder = "Search"
+        searchController?.searchBar.placeholder = NSLocalizedString("Search", comment: "Search description")
         
         navigationItem.searchController = searchController
         definesPresentationContext = true
