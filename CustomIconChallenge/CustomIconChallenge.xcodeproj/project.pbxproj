@@ -12,6 +12,8 @@
 		DFC7CD0023EEE5420059860D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CCFE23EEE5420059860D /* Main.storyboard */; };
 		DFC7CD0223EEE5440059860D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CD0123EEE5440059860D /* Assets.xcassets */; };
 		DFC7CD0523EEE5440059860D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CD0323EEE5440059860D /* LaunchScreen.storyboard */; };
+		DFC7CD1623EEFA000059860D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD1523EEFA000059860D /* Reachability.swift */; };
+		DFC7CD3823EEFE4B0059860D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3723EEFE4B0059860D /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		DFC7CD0123EEE5440059860D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFC7CD0423EEE5440059860D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFC7CD0623EEE5440059860D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFC7CD1523EEFA000059860D /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		DFC7CD3723EEFE4B0059860D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,8 @@
 			children = (
 				DFC7CD0D23EEF5C00059860D /* Source */,
 				DFC7CD1023EEF63E0059860D /* Storyboards */,
-				DFC7CD0F23EEF60C0059860D /* Resources */,
+				DFC7CD0123EEE5440059860D /* Assets.xcassets */,
+				DFC7CD0623EEE5440059860D /* Info.plist */,
 			);
 			path = CustomIconChallenge;
 			sourceTree = "<group>";
@@ -83,17 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				DFC7CCF823EEE5410059860D /* AppDelegate.swift */,
+				DFC7CD3723EEFE4B0059860D /* SceneDelegate.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		DFC7CD0F23EEF60C0059860D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DFC7CD0123EEE5440059860D /* Assets.xcassets */,
-				DFC7CD0623EEE5440059860D /* Info.plist */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		DFC7CD1023EEF63E0059860D /* Storyboards */ = {
@@ -124,8 +121,17 @@
 		DFC7CD1323EEF6DF0059860D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				DFC7CD1423EEF9C40059860D /* Services */,
+				DFC7CD1523EEFA000059860D /* Reachability.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		DFC7CD1423EEF9C40059860D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +207,8 @@
 			files = (
 				DFC7CCFD23EEE5420059860D /* ViewController.swift in Sources */,
 				DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */,
+				DFC7CD1623EEFA000059860D /* Reachability.swift in Sources */,
+				DFC7CD3823EEFE4B0059860D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
