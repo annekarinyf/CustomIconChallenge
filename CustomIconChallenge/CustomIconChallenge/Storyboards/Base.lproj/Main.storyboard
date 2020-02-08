@@ -35,7 +35,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="wzV-hn-BT5"/>
                     <connections>
-                        <outlet property="customIconsTableView" destination="lIw-fp-7Jb" id="ycV-Od-pzm"/>
+                        <outlet property="iconsTableView" destination="lIw-fp-7Jb" id="ycV-Od-pzm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

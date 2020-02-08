@@ -10,7 +10,7 @@ import UIKit
 
 final class CustomIconsViewController: UIViewController {
     
-    @IBOutlet private weak var customIconsTableView: UITableView!
+    @IBOutlet private weak var iconsTableView: UITableView!
     
     private let cellID = "IconTableViewCell"
     private var iconsViewModel = [IconViewModel]()
@@ -28,7 +28,7 @@ final class CustomIconsViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         title = NSLocalizedString("Custom Icons", comment: "View Title")
         
-        customIconsTableView.register(UINib(nibName: cellID, bundle: nil), forCellReuseIdentifier: cellID)
+        iconsTableView.register(UINib(nibName: cellID, bundle: nil), forCellReuseIdentifier: cellID)
         setupSearchController()
     }
     
@@ -57,10 +57,13 @@ final class CustomIconsViewController: UIViewController {
     // MARK: - Data loading
     private func getIconsFromAPI() {
         CustomIconAPIManager.shared.listCustomIcons { [weak self] (icons, error) in
-            guard let strongSelf = self, let icons = icons else { return }
+            guard let strongSelf = self, let icons = icons, error == nil else {
+                self?.handleGetIconsError(error)
+                return
+            }
             
             strongSelf.iconsViewModel = icons.map { IconViewModel(icon: $0) }
-            strongSelf.customIconsTableView.reloadData()
+            strongSelf.iconsTableView.reloadData()
         }
     }
     
@@ -69,7 +72,15 @@ final class CustomIconsViewController: UIViewController {
         guard let text = (searchController?.searchBar.text)?.lowercased() else { return }
         
         filteredIconsViewModel = iconsViewModel.filter { $0.title.lowercased().contains(text) || $0.subtitle.lowercased().contains(text) }
-        customIconsTableView.reloadData()
+        iconsTableView.reloadData()
+    }
+    
+    // MARK: - Errors handling
+    private func handleGetIconsError(_ error: NetworkError?) {
+        let title = NSLocalizedString("Error", comment: "Alert Title")
+        let errorMessage = error?.errorMessage
+        
+        AlertHelper.presentOKAlert(in: self, title: title, message: errorMessage)
     }
 }
 

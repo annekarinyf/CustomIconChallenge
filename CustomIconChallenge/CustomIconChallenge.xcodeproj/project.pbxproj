@@ -13,6 +13,7 @@
 		DF0D800823EF233F00980EBE /* IconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D800623EF233F00980EBE /* IconTableViewCell.swift */; };
 		DF0D800923EF233F00980EBE /* IconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0D800723EF233F00980EBE /* IconTableViewCell.xib */; };
 		DF18B20B23EF6B2000305570 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF18B20D23EF6B2000305570 /* Localizable.strings */; };
+		DF18B21023EF6F9600305570 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF18B20F23EF6F9600305570 /* AlertHelper.swift */; };
 		DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCF823EEE5410059860D /* AppDelegate.swift */; };
 		DFC7CCFD23EEE5420059860D /* CustomIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */; };
 		DFC7CD0023EEE5420059860D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CCFE23EEE5420059860D /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		DF0D800623EF233F00980EBE /* IconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTableViewCell.swift; sourceTree = "<group>"; };
 		DF0D800723EF233F00980EBE /* IconTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconTableViewCell.xib; sourceTree = "<group>"; };
 		DF18B20C23EF6B2000305570 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DF18B20F23EF6F9600305570 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		DFC7CCF523EEE5410059860D /* CustomIconChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomIconChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC7CCF823EEE5410059860D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIconsViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DF18B20E23EF6F6500305570 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DF18B20F23EF6F9600305570 /* AlertHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DFC7CCEC23EEE5410059860D = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				DFC7CD0E23EEF5D50059860D /* Application */,
+				DF18B20E23EF6F6500305570 /* Helpers */,
 				DF0D800123EF152C00980EBE /* Model */,
 				DFC7CD1123EEF6920059860D /* Views */,
 				DFC7CD0C23EEF50B0059860D /* View Model */,
@@ -270,6 +281,7 @@
 				DFC7CCFD23EEE5420059860D /* CustomIconsViewController.swift in Sources */,
 				DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */,
 				DFC7CD3A23EF05B00059860D /* NetworkProtocol.swift in Sources */,
+				DF18B21023EF6F9600305570 /* AlertHelper.swift in Sources */,
 				DF0D7FFE23EF113300980EBE /* IconViewModel.swift in Sources */,
 				DFC7CD3C23EF05D60059860D /* NetworkError.swift in Sources */,
 				DFC7CD3E23EF07390059860D /* CustomIconEndpoint.swift in Sources */,
