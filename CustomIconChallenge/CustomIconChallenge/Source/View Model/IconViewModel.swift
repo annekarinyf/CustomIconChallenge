@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class IconViewModel {
+final class IconViewModel {
     private var icon: Icon
     var image: UIImage?
     

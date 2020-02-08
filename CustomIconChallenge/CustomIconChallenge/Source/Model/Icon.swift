@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Icon {
+final class Icon {
     let title: String
     let subtitle: String
     private let imageURLString: String

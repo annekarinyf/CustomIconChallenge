@@ -9,7 +9,7 @@
 import Foundation
 import SystemConfiguration
 
-class Reachability {
+struct Reachability {
     
     // MARK: - Internet Connection Verification
     static func isConnectedToNetwork() -> Bool {

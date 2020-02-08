@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CustomIconAPIManager {
+final class CustomIconAPIManager {
     
     public static let shared = CustomIconAPIManager()
     private let request = Request<CustomIconAPI>()
