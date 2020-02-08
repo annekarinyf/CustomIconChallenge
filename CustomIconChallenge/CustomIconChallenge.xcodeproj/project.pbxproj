@@ -10,8 +10,10 @@
 		DF0D7FFE23EF113300980EBE /* IconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D7FFD23EF113300980EBE /* IconViewModel.swift */; };
 		DF0D800023EF13A200980EBE /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D7FFF23EF13A200980EBE /* URLHelper.swift */; };
 		DF0D800323EF153F00980EBE /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D800223EF153F00980EBE /* Icon.swift */; };
+		DF0D800823EF233F00980EBE /* IconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D800623EF233F00980EBE /* IconTableViewCell.swift */; };
+		DF0D800923EF233F00980EBE /* IconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0D800723EF233F00980EBE /* IconTableViewCell.xib */; };
 		DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCF823EEE5410059860D /* AppDelegate.swift */; };
-		DFC7CCFD23EEE5420059860D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCFC23EEE5420059860D /* ViewController.swift */; };
+		DFC7CCFD23EEE5420059860D /* CustomIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */; };
 		DFC7CD0023EEE5420059860D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CCFE23EEE5420059860D /* Main.storyboard */; };
 		DFC7CD0223EEE5440059860D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CD0123EEE5440059860D /* Assets.xcassets */; };
 		DFC7CD0523EEE5440059860D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CD0323EEE5440059860D /* LaunchScreen.storyboard */; };
@@ -29,9 +31,11 @@
 		DF0D7FFD23EF113300980EBE /* IconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewModel.swift; sourceTree = "<group>"; };
 		DF0D7FFF23EF13A200980EBE /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
 		DF0D800223EF153F00980EBE /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		DF0D800623EF233F00980EBE /* IconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTableViewCell.swift; sourceTree = "<group>"; };
+		DF0D800723EF233F00980EBE /* IconTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconTableViewCell.xib; sourceTree = "<group>"; };
 		DFC7CCF523EEE5410059860D /* CustomIconChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomIconChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC7CCF823EEE5410059860D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFC7CCFC23EEE5420059860D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIconsViewController.swift; sourceTree = "<group>"; };
 		DFC7CCFF23EEE5420059860D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFC7CD0123EEE5440059860D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFC7CD0423EEE5440059860D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 				DF0D800223EF153F00980EBE /* Icon.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DF0D800523EF1C7B00980EBE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D800623EF233F00980EBE /* IconTableViewCell.swift */,
+				DF0D800723EF233F00980EBE /* IconTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		DFC7CCEC23EEE5410059860D = {
@@ -105,8 +118,8 @@
 			children = (
 				DFC7CD0E23EEF5D50059860D /* Application */,
 				DF0D800123EF152C00980EBE /* Model */,
+				DFC7CD1123EEF6920059860D /* Views */,
 				DFC7CD0C23EEF50B0059860D /* View Model */,
-				DFC7CD1123EEF6920059860D /* Modules */,
 				DFC7CD1323EEF6DF0059860D /* Networking */,
 			);
 			path = Source;
@@ -130,18 +143,19 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		DFC7CD1123EEF6920059860D /* Modules */ = {
+		DFC7CD1123EEF6920059860D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				DFC7CD1223EEF6AE0059860D /* Custom Icons */,
 			);
-			path = Modules;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		DFC7CD1223EEF6AE0059860D /* Custom Icons */ = {
 			isa = PBXGroup;
 			children = (
-				DFC7CCFC23EEE5420059860D /* ViewController.swift */,
+				DF0D800523EF1C7B00980EBE /* Cells */,
+				DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */,
 			);
 			path = "Custom Icons";
 			sourceTree = "<group>";
@@ -229,6 +243,7 @@
 			files = (
 				DFC7CD0523EEE5440059860D /* LaunchScreen.storyboard in Resources */,
 				DFC7CD0223EEE5440059860D /* Assets.xcassets in Resources */,
+				DF0D800923EF233F00980EBE /* IconTableViewCell.xib in Resources */,
 				DFC7CD0023EEE5420059860D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFC7CCFD23EEE5420059860D /* ViewController.swift in Sources */,
+				DFC7CCFD23EEE5420059860D /* CustomIconsViewController.swift in Sources */,
 				DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */,
 				DFC7CD3A23EF05B00059860D /* NetworkProtocol.swift in Sources */,
 				DF0D7FFE23EF113300980EBE /* IconViewModel.swift in Sources */,
@@ -248,6 +263,7 @@
 				DFC7CD3E23EF07390059860D /* CustomIconEndpoint.swift in Sources */,
 				DFC7CD1623EEFA000059860D /* Reachability.swift in Sources */,
 				DFC7CD4023EF080F0059860D /* CustomIconAPIManager.swift in Sources */,
+				DF0D800823EF233F00980EBE /* IconTableViewCell.swift in Sources */,
 				DFC7CD4223EF08480059860D /* Request.swift in Sources */,
 				DF0D800323EF153F00980EBE /* Icon.swift in Sources */,
 				DF0D800023EF13A200980EBE /* URLHelper.swift in Sources */,
