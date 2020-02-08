@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CustomIconsViewController.swift
 //  CustomIconChallenge
 //
 //  Created by Anne Kariny Silva Freitas on 08/02/20.
@@ -8,15 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CustomIconsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        CustomIconAPIManager().listCustomIcons { (icons, error) in
-            print(icons)
-        }
     }
 }
 
