@@ -45,19 +45,12 @@ extension CustomIconsViewController: UITableViewDataSource, UITableViewDelegate 
             let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? IconTableViewCell else {
                 return UITableViewCell()
         }
-        
-        let iconViewModel = iconsViewModel[indexPath.row]
-        cell.setupCell(with: iconViewModel)
-        
-        iconViewModel.getImage { image in
-            cell.setImage(image)
-        }
-    
+        cell.setupCell(with: iconsViewModel[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 76
+        return 92
     }
 }
 
