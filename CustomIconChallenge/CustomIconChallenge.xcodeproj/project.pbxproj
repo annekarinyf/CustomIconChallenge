@@ -54,14 +54,78 @@
 		DFC7CCF723EEE5410059860D /* CustomIconChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				DFC7CCF823EEE5410059860D /* AppDelegate.swift */,
-				DFC7CCFC23EEE5420059860D /* ViewController.swift */,
-				DFC7CCFE23EEE5420059860D /* Main.storyboard */,
-				DFC7CD0123EEE5440059860D /* Assets.xcassets */,
-				DFC7CD0323EEE5440059860D /* LaunchScreen.storyboard */,
-				DFC7CD0623EEE5440059860D /* Info.plist */,
+				DFC7CD0D23EEF5C00059860D /* Source */,
+				DFC7CD1023EEF63E0059860D /* Storyboards */,
+				DFC7CD0F23EEF60C0059860D /* Resources */,
 			);
 			path = CustomIconChallenge;
+			sourceTree = "<group>";
+		};
+		DFC7CD0C23EEF50B0059860D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFC7CD0D23EEF5C00059860D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DFC7CD0E23EEF5D50059860D /* Application */,
+				DFC7CD0C23EEF50B0059860D /* Model */,
+				DFC7CD1123EEF6920059860D /* Modules */,
+				DFC7CD1323EEF6DF0059860D /* Networking */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DFC7CD0E23EEF5D50059860D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DFC7CCF823EEE5410059860D /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DFC7CD0F23EEF60C0059860D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFC7CD0123EEE5440059860D /* Assets.xcassets */,
+				DFC7CD0623EEE5440059860D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DFC7CD1023EEF63E0059860D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DFC7CCFE23EEE5420059860D /* Main.storyboard */,
+				DFC7CD0323EEE5440059860D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DFC7CD1123EEF6920059860D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DFC7CD1223EEF6AE0059860D /* Custom Icons */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DFC7CD1223EEF6AE0059860D /* Custom Icons */ = {
+			isa = PBXGroup;
+			children = (
+				DFC7CCFC23EEE5420059860D /* ViewController.swift */,
+			);
+			path = "Custom Icons";
+			sourceTree = "<group>";
+		};
+		DFC7CD1323EEF6DF0059860D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
