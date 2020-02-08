@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Request<T: EndPointType> {
+final class Request<T: EndPointType> {
     private var task: URLSessionTask?
     
     private func performRequest<U: Decodable>(request: URLRequest, completion: @escaping (U?, NetworkError?) -> Void) {
