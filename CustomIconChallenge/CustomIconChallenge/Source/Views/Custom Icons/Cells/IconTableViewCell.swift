@@ -20,9 +20,12 @@ final class IconTableViewCell: UITableViewCell {
     // MARK: - Cell loading and setup
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        setupCellLayout()
         setupActivityIndicatorForImageView()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupCellLayout()
     }
     
     func setupCell(with icon: IconViewModel) {
@@ -65,7 +68,6 @@ final class IconTableViewCell: UITableViewCell {
         activityIndicator = UIActivityIndicatorView(style: .medium)
         activityIndicator?.hidesWhenStopped = true
         activityIndicator?.center = iconImageView.center
-        activityIndicator?.stopAnimating()
         
         guard let indicatorView = activityIndicator else { return }
         iconImageView.addSubview(indicatorView)
