@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0D7FFE23EF113300980EBE /* IconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D7FFD23EF113300980EBE /* IconViewModel.swift */; };
+		DF0D800023EF13A200980EBE /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D7FFF23EF13A200980EBE /* URLHelper.swift */; };
+		DF0D800323EF153F00980EBE /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D800223EF153F00980EBE /* Icon.swift */; };
 		DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCF823EEE5410059860D /* AppDelegate.swift */; };
 		DFC7CCFD23EEE5420059860D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCFC23EEE5420059860D /* ViewController.swift */; };
 		DFC7CD0023EEE5420059860D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CCFE23EEE5420059860D /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF0D7FFD23EF113300980EBE /* IconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewModel.swift; sourceTree = "<group>"; };
+		DF0D7FFF23EF13A200980EBE /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
+		DF0D800223EF153F00980EBE /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		DFC7CCF523EEE5410059860D /* CustomIconChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomIconChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC7CCF823EEE5410059860D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFC7CCFC23EEE5420059860D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF0D800123EF152C00980EBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D800223EF153F00980EBE /* Icon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DFC7CCEC23EEE5410059860D = {
 			isa = PBXGroup;
 			children = (
@@ -78,18 +92,20 @@
 			path = CustomIconChallenge;
 			sourceTree = "<group>";
 		};
-		DFC7CD0C23EEF50B0059860D /* Model */ = {
+		DFC7CD0C23EEF50B0059860D /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF0D7FFD23EF113300980EBE /* IconViewModel.swift */,
 			);
-			path = Model;
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		DFC7CD0D23EEF5C00059860D /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				DFC7CD0E23EEF5D50059860D /* Application */,
-				DFC7CD0C23EEF50B0059860D /* Model */,
+				DF0D800123EF152C00980EBE /* Model */,
+				DFC7CD0C23EEF50B0059860D /* View Model */,
 				DFC7CD1123EEF6920059860D /* Modules */,
 				DFC7CD1323EEF6DF0059860D /* Networking */,
 			);
@@ -138,6 +154,7 @@
 				DFC7CD4123EF08480059860D /* Request.swift */,
 				DFC7CD3923EF05B00059860D /* NetworkProtocol.swift */,
 				DFC7CD3B23EF05D60059860D /* NetworkError.swift */,
+				DF0D7FFF23EF13A200980EBE /* URLHelper.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -226,11 +243,14 @@
 				DFC7CCFD23EEE5420059860D /* ViewController.swift in Sources */,
 				DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */,
 				DFC7CD3A23EF05B00059860D /* NetworkProtocol.swift in Sources */,
+				DF0D7FFE23EF113300980EBE /* IconViewModel.swift in Sources */,
 				DFC7CD3C23EF05D60059860D /* NetworkError.swift in Sources */,
 				DFC7CD3E23EF07390059860D /* CustomIconEndpoint.swift in Sources */,
 				DFC7CD1623EEFA000059860D /* Reachability.swift in Sources */,
 				DFC7CD4023EF080F0059860D /* CustomIconAPIManager.swift in Sources */,
 				DFC7CD4223EF08480059860D /* Request.swift in Sources */,
+				DF0D800323EF153F00980EBE /* Icon.swift in Sources */,
+				DF0D800023EF13A200980EBE /* URLHelper.swift in Sources */,
 				DFC7CD3823EEFE4B0059860D /* SceneDelegate.swift in Sources */,
 				DFC7CD4423EF0A4B0059860D /* CustomAPIDecodable.swift in Sources */,
 			);

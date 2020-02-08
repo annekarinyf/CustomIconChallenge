@@ -19,7 +19,7 @@ class CustomIconAPIManager {
                 completion(nil, error)
                 return
             }
-            completion(icons, error)
+            completion(icons.map { Icon(from: $0) }, error)
         }
     }
 }
