@@ -10,11 +10,11 @@ import Foundation
 
 // MARK: - CustomIconResult
 struct CustomIconResult: Codable {
-    let icons: [Icon]
+    let icons: [IconData]
 }
 
-// MARK: - Icon
-struct Icon: Codable {
+// MARK: - IconData
+struct IconData: Codable {
     let title: String
     let subtitle: String
     let image: String
