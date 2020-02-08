@@ -14,6 +14,12 @@
 		DFC7CD0523EEE5440059860D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CD0323EEE5440059860D /* LaunchScreen.storyboard */; };
 		DFC7CD1623EEFA000059860D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD1523EEFA000059860D /* Reachability.swift */; };
 		DFC7CD3823EEFE4B0059860D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3723EEFE4B0059860D /* SceneDelegate.swift */; };
+		DFC7CD3A23EF05B00059860D /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3923EF05B00059860D /* NetworkProtocol.swift */; };
+		DFC7CD3C23EF05D60059860D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3B23EF05D60059860D /* NetworkError.swift */; };
+		DFC7CD3E23EF07390059860D /* CustomIconEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3D23EF07390059860D /* CustomIconEndpoint.swift */; };
+		DFC7CD4023EF080F0059860D /* CustomIconAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3F23EF080F0059860D /* CustomIconAPIManager.swift */; };
+		DFC7CD4223EF08480059860D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD4123EF08480059860D /* Request.swift */; };
+		DFC7CD4423EF0A4B0059860D /* CustomAPIDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD4323EF0A4B0059860D /* CustomAPIDecodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		DFC7CD0623EEE5440059860D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFC7CD1523EEFA000059860D /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		DFC7CD3723EEFE4B0059860D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DFC7CD3923EF05B00059860D /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		DFC7CD3B23EF05D60059860D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		DFC7CD3D23EF07390059860D /* CustomIconEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIconEndpoint.swift; sourceTree = "<group>"; };
+		DFC7CD3F23EF080F0059860D /* CustomIconAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIconAPIManager.swift; sourceTree = "<group>"; };
+		DFC7CD4123EF08480059860D /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		DFC7CD4323EF0A4B0059860D /* CustomAPIDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAPIDecodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,17 +133,23 @@
 		DFC7CD1323EEF6DF0059860D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				DFC7CD1423EEF9C40059860D /* Services */,
+				DFC7CD1423EEF9C40059860D /* CustomIconAPI */,
 				DFC7CD1523EEFA000059860D /* Reachability.swift */,
+				DFC7CD4123EF08480059860D /* Request.swift */,
+				DFC7CD3923EF05B00059860D /* NetworkProtocol.swift */,
+				DFC7CD3B23EF05D60059860D /* NetworkError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		DFC7CD1423EEF9C40059860D /* Services */ = {
+		DFC7CD1423EEF9C40059860D /* CustomIconAPI */ = {
 			isa = PBXGroup;
 			children = (
+				DFC7CD3D23EF07390059860D /* CustomIconEndpoint.swift */,
+				DFC7CD3F23EF080F0059860D /* CustomIconAPIManager.swift */,
+				DFC7CD4323EF0A4B0059860D /* CustomAPIDecodable.swift */,
 			);
-			path = Services;
+			path = CustomIconAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,8 +225,14 @@
 			files = (
 				DFC7CCFD23EEE5420059860D /* ViewController.swift in Sources */,
 				DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */,
+				DFC7CD3A23EF05B00059860D /* NetworkProtocol.swift in Sources */,
+				DFC7CD3C23EF05D60059860D /* NetworkError.swift in Sources */,
+				DFC7CD3E23EF07390059860D /* CustomIconEndpoint.swift in Sources */,
 				DFC7CD1623EEFA000059860D /* Reachability.swift in Sources */,
+				DFC7CD4023EF080F0059860D /* CustomIconAPIManager.swift in Sources */,
+				DFC7CD4223EF08480059860D /* Request.swift in Sources */,
 				DFC7CD3823EEFE4B0059860D /* SceneDelegate.swift in Sources */,
+				DFC7CD4423EF0A4B0059860D /* CustomAPIDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
