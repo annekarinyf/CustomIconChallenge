@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Cell to present icon information
 final class IconTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var containerView: ShadowView!

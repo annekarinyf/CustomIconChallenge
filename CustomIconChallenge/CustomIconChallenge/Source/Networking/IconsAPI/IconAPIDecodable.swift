@@ -1,5 +1,5 @@
 //
-//  CustomAPIDecodable.swift
+//  IconAPIDecodable.swift
 //  CustomIconChallenge
 //
 //  Created by Anne Kariny Silva Freitas on 08/02/20.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-// MARK: - CustomIconResult
-struct CustomIconResult: Codable {
+// Decodes icons list and data
+struct IconResult: Decodable {
     let icons: [IconData]
 }
 
 // MARK: - IconData
-struct IconData: Codable {
+struct IconData: Decodable {
     let title: String
     let subtitle: String
     let image: String

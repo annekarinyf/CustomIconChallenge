@@ -8,8 +8,8 @@
 
 import Foundation
 
-// MARK: Protocols for API
-public protocol EndPointType {
+// Network protocols for endpoints and request classes
+protocol EndPointType {
     var url: URL? { get }
     var path: String { get }
 }

@@ -1,5 +1,5 @@
 //
-//  CustomIconsViewController.swift
+//  IconsViewController.swift
 //  CustomIconChallenge
 //
 //  Created by Anne Kariny Silva Freitas on 08/02/20.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-final class CustomIconsViewController: UIViewController {
+// Class to present a list of possible custom icons from an app
+final class IconsViewController: UIViewController {
     
     @IBOutlet private weak var iconsTableView: UITableView!
     
@@ -34,13 +35,7 @@ final class CustomIconsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationItem.hidesSearchBarWhenScrolling = false
         getIconsFromAPI()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        navigationItem.hidesSearchBarWhenScrolling = true
     }
     
     // MARK: - SearchResultsController setup
@@ -56,7 +51,7 @@ final class CustomIconsViewController: UIViewController {
     
     // MARK: - Data loading
     private func getIconsFromAPI() {
-        CustomIconAPIManager.shared.listCustomIcons { [weak self] (icons, error) in
+        IconsAPIManager.shared.listCustomIcons { [weak self] (icons, error) in
             guard let strongSelf = self, let icons = icons, error == nil else {
                 self?.handleGetIconsError(error)
                 return
@@ -85,7 +80,7 @@ final class CustomIconsViewController: UIViewController {
 }
 
 // MARK: - UITableView delegate and datasource methods
-extension CustomIconsViewController: UITableViewDataSource, UITableViewDelegate {
+extension IconsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return isSearching ? filteredIconsViewModel.count : iconsViewModel.count
     }
@@ -109,7 +104,7 @@ extension CustomIconsViewController: UITableViewDataSource, UITableViewDelegate 
 }
 
 // MARK: - UISearchResultsUpdating delegate
-extension CustomIconsViewController: UISearchResultsUpdating {
+extension IconsViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filterIcons()
     }

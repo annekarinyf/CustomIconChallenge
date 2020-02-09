@@ -6,9 +6,9 @@
 //  Copyright © 2020 Anne Kariny Silva Freitas. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
+// Makes simplier the call of an UIAlert
 struct AlertHelper {
     static func presentOKAlert(in view: UIViewController, title: String?, message: String?) {
         let alertContoller = UIAlertController(title: title, message: message, preferredStyle: .alert)

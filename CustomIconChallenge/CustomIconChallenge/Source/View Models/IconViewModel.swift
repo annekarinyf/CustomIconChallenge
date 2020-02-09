@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// The view-model to prepare icon's data to be presented on IconsViewController
 final class IconViewModel {
     private var icon: Icon
     var image: UIImage?

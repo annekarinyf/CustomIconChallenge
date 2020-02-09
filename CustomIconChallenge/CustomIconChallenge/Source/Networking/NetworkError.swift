@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Possible errors for API requests
 enum NetworkError: Error {
     case internetUnavailable
     case invalidURL

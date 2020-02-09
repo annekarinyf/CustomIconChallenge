@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// Functions that  receives a URL and return data
 struct URLHelper {
     static func downloadImage(withURL imageURL: URL, completion: @escaping (UIImage?) -> Void) {
         let imageDownloadQueue = DispatchQueue(label: "irapps.imageDownload", qos: .userInitiated)

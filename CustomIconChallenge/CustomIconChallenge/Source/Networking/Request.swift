@@ -8,6 +8,7 @@
 
 import Foundation
 
+// Represents possible generic requests on this project
 final class Request<T: EndPointType> {
     private var task: URLSessionTask?
     
