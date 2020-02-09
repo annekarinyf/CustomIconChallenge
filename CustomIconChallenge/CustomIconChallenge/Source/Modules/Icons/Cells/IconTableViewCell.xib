@@ -16,13 +16,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGV-36-ETl" customClass="ShadowView" customModule="CustomIconChallenge" customModuleProvider="target">
-                        <rect key="frame" x="8" y="8" width="304" height="76"/>
+                        <rect key="frame" x="16" y="8" width="288" height="76"/>
                         <subviews>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="JaE-GO-gUO">
-                                <rect key="frame" x="20.5" y="28" width="20" height="20"/>
+                                <rect key="frame" x="28.5" y="28" width="20" height="20"/>
                             </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S3O-43-A8E">
-                                <rect key="frame" x="8" y="15.5" width="288" height="45"/>
+                                <rect key="frame" x="16" y="15.5" width="264" height="45"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zyy-Y3-SBp">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -38,16 +38,16 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nd0-g4-MfV">
-                                        <rect key="frame" x="55" y="0.0" width="233" height="45"/>
+                                        <rect key="frame" x="55" y="0.0" width="209" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMI-qe-2Bg">
-                                                <rect key="frame" x="0.0" y="0.0" width="233" height="24"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="209" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xaa-sw-eSB">
-                                                <rect key="frame" x="0.0" y="24" width="233" height="21"/>
+                                                <rect key="frame" x="0.0" y="24" width="209" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                 <color key="textColor" red="0.56075114010000005" green="0.55643361810000003" blue="0.58121949429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -64,19 +64,18 @@
                             <constraint firstItem="S3O-43-A8E" firstAttribute="top" secondItem="GGV-36-ETl" secondAttribute="top" constant="15.5" id="Euq-AU-OmD"/>
                             <constraint firstItem="JaE-GO-gUO" firstAttribute="centerX" secondItem="zyy-Y3-SBp" secondAttribute="centerX" id="FIb-AS-EWR"/>
                             <constraint firstItem="JaE-GO-gUO" firstAttribute="centerY" secondItem="zyy-Y3-SBp" secondAttribute="centerY" id="fwh-rL-IDK"/>
-                            <constraint firstItem="S3O-43-A8E" firstAttribute="leading" secondItem="GGV-36-ETl" secondAttribute="leading" constant="8" id="h0h-TX-FSm"/>
+                            <constraint firstItem="S3O-43-A8E" firstAttribute="leading" secondItem="GGV-36-ETl" secondAttribute="leading" constant="16" id="h0h-TX-FSm"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="GGV-36-ETl" secondAttribute="trailing" constant="8" id="0B0-NN-mG6"/>
+                    <constraint firstAttribute="trailing" secondItem="GGV-36-ETl" secondAttribute="trailing" constant="16" id="0B0-NN-mG6"/>
                     <constraint firstAttribute="bottom" secondItem="GGV-36-ETl" secondAttribute="bottom" constant="8" id="GgE-SM-vge"/>
-                    <constraint firstItem="GGV-36-ETl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="eqr-L4-6uf"/>
+                    <constraint firstItem="GGV-36-ETl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="eqr-L4-6uf"/>
                     <constraint firstItem="GGV-36-ETl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="wOX-zd-wj7"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="containerView" destination="GGV-36-ETl" id="x45-un-gqZ"/>
                 <outlet property="iconImageView" destination="zyy-Y3-SBp" id="3mr-fU-jAt"/>
                 <outlet property="imageLoadingIndicator" destination="JaE-GO-gUO" id="PnS-ur-rP4"/>
                 <outlet property="subtitleLabel" destination="Xaa-sw-eSB" id="WCC-MJ-9CO"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-// Class to present a list of possible custom icons from an app
+/// Class to present a list of possible custom icons from an app
 final class IconsViewController: UIViewController {
     
     @IBOutlet private weak var iconsTableView: UITableView!
@@ -73,8 +73,11 @@ final class IconsViewController: UIViewController {
             
             strongSelf.iconsViewModel = icons.map { IconViewModel(icon: $0) }
             strongSelf.setEmptyState(icons.isEmpty)
-            strongSelf.refreshControl.endRefreshing()
-            strongSelf.iconsTableView.reloadData()
+            
+            DispatchQueue.main.async {
+                strongSelf.refreshControl.endRefreshing()
+                strongSelf.iconsTableView.reloadData()
+            }
         }
     }
     

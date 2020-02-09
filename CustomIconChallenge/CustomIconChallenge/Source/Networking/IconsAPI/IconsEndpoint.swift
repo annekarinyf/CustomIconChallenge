@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Define icon's API funcionalities and endpoint variables
+/// Define icon's API funcionalities and endpoint variables
 enum IconsAPI {
     case listIcons
 }

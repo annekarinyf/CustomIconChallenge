@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Decodes icons list and data
+/// Decodes icons list and data
 struct IconResult: Decodable {
     let icons: [IconData]
 }

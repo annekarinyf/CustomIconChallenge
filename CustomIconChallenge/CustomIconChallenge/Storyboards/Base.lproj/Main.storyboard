@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lIw-fp-7Jb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="6" y="88" width="402" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="2xE-5m-4BZ"/>
@@ -35,11 +35,11 @@
                             <constraint firstItem="lIw-fp-7Jb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SEb-qL-SYj"/>
                             <constraint firstItem="dXn-5l-mtN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="SPh-xp-Wfl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lIw-fp-7Jb" secondAttribute="bottom" id="bv2-Dx-ORB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lIw-fp-7Jb" secondAttribute="trailing" id="kKJ-Xh-ULT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lIw-fp-7Jb" secondAttribute="trailing" constant="6" id="kKJ-Xh-ULT"/>
                             <constraint firstItem="dXn-5l-mtN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lwe-9L-odu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dXn-5l-mtN" secondAttribute="trailing" constant="20" id="mK8-67-6D7"/>
                             <constraint firstItem="dXn-5l-mtN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yKx-54-YjQ"/>
-                            <constraint firstItem="lIw-fp-7Jb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yYj-ed-PNZ"/>
+                            <constraint firstItem="lIw-fp-7Jb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="yYj-ed-PNZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -9,7 +9,7 @@
 import Foundation
 import SystemConfiguration
 
-// Detect if network is avaliabe
+/// Detect if network is avaliabe
 struct Reachability {
     
     static func isConnectedToNetwork() -> Bool {

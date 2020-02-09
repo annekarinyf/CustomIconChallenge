@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-// Represents a view with a smooth shadow and rounded borders
+/// Represents a view with a smooth shadow and rounded borders
 final class ShadowView: UIView {
     
     override func layoutSubviews() {

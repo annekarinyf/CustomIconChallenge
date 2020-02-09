@@ -8,7 +8,7 @@
 
 import Foundation
 
-// Represents possible generic requests on this project
+/// Represents possible generic requests on this project
 final class Request<T: EndPointType> {
     private var task: URLSessionTask?
     
@@ -47,14 +47,14 @@ final class Request<T: EndPointType> {
 
 // MARK: - NetworkProtocol
 extension Request: NetworkProtocol {
-    func performGET<U: Decodable>(_ endPoint: T, completion: @escaping (U?, NetworkError?) -> Void) {
+    func perform<U: Decodable>(_ method: HttpMethod, _ endPoint: T, completion: @escaping (U?, NetworkError?) -> Void) {
         guard let url = endPoint.url else {
             completion(nil, .invalidURL)
             return
         }
         
         var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 30.0)
-        request.httpMethod = "GET"
+        request.httpMethod = method.rawValue
         
         performRequest(request: request, completion: completion)
     }

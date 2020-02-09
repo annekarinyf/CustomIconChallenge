@@ -36,6 +36,7 @@
 		DF0D800623EF233F00980EBE /* IconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTableViewCell.swift; sourceTree = "<group>"; };
 		DF0D800723EF233F00980EBE /* IconTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconTableViewCell.xib; sourceTree = "<group>"; };
 		DF18B20C23EF6B2000305570 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFABA6C523EFA31E00148B7B /* CustomIconChallenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomIconChallenge.entitlements; sourceTree = "<group>"; };
 		DFC7CCF523EEE5410059860D /* CustomIconChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomIconChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC7CCF823EEE5410059860D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFC7CCFC23EEE5420059860D /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 				DF18B20823EF6A6F00305570 /* Resources */,
 				DFC7CD0123EEE5440059860D /* Assets.xcassets */,
 				DFC7CD0623EEE5440059860D /* Info.plist */,
+				DFABA6C523EFA31E00148B7B /* CustomIconChallenge.entitlements */,
 			);
 			path = CustomIconChallenge;
 			sourceTree = "<group>";
@@ -140,7 +142,6 @@
 				DFC7CD0E23EEF5D50059860D /* Application */,
 				DF0D800123EF152C00980EBE /* Models */,
 				DFC7CD1123EEF6920059860D /* Modules */,
-				DFC7CD0C23EEF50B0059860D /* View Models */,
 				DFC7CD1323EEF6DF0059860D /* Networking */,
 			);
 			path = Source;
@@ -178,6 +179,7 @@
 				DFCA61EE23EF803E004233AF /* Custom Views */,
 				DF0D800523EF1C7B00980EBE /* Cells */,
 				DF95EEF723EF8845008597B0 /* View Controllers */,
+				DFC7CD0C23EEF50B0059860D /* View Models */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -452,7 +454,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomIconChallenge/CustomIconChallenge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = F476P237J6;
 				INFOPLIST_FILE = CustomIconChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,6 +465,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Anne.CustomIconChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,7 +475,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomIconChallenge/CustomIconChallenge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = F476P237J6;
 				INFOPLIST_FILE = CustomIconChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,6 +486,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Anne.CustomIconChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

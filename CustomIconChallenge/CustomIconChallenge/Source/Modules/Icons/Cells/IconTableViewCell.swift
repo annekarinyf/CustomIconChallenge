@@ -8,10 +8,9 @@
 
 import UIKit
 
-// Cell to present icon information
+/// Cell to present icon information
 final class IconTableViewCell: UITableViewCell {
     
-    @IBOutlet private weak var containerView: ShadowView!
     @IBOutlet private weak var iconImageView: UIImageView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var subtitleLabel: UILabel!

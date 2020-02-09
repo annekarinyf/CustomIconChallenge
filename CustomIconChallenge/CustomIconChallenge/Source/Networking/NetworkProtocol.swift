@@ -8,7 +8,11 @@
 
 import Foundation
 
-// Network protocols for endpoints and request classes
+/// Network protocols and enum for endpoints and request classes
+enum HttpMethod: String {
+    case get = "GET"
+}
+
 protocol EndPointType {
     var url: URL? { get }
     var path: String { get }
@@ -16,6 +20,6 @@ protocol EndPointType {
 
 protocol NetworkProtocol {
     associatedtype EndPoint: EndPointType
-    func performGET<T: Decodable>(_ route: EndPoint, completion: @escaping (T?, NetworkError?) -> Void)
+    func perform<T: Decodable>(_ method: HttpMethod, _ route: EndPoint, completion: @escaping (T?, NetworkError?) -> Void)
     func cancel()
 }
