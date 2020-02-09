@@ -27,6 +27,7 @@
 		DFC7CD4023EF080F0059860D /* CustomIconAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3F23EF080F0059860D /* CustomIconAPIManager.swift */; };
 		DFC7CD4223EF08480059860D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD4123EF08480059860D /* Request.swift */; };
 		DFC7CD4423EF0A4B0059860D /* CustomAPIDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD4323EF0A4B0059860D /* CustomAPIDecodable.swift */; };
+		DFCA61F023EF8059004233AF /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCA61EF23EF8058004233AF /* ShadowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		DFC7CD3F23EF080F0059860D /* CustomIconAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIconAPIManager.swift; sourceTree = "<group>"; };
 		DFC7CD4123EF08480059860D /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		DFC7CD4323EF0A4B0059860D /* CustomAPIDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAPIDecodable.swift; sourceTree = "<group>"; };
+		DFCA61EF23EF8058004233AF /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,18 +170,19 @@
 		DFC7CD1123EEF6920059860D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DFC7CD1223EEF6AE0059860D /* Custom Icons */,
+				DFC7CD1223EEF6AE0059860D /* Icons */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		DFC7CD1223EEF6AE0059860D /* Custom Icons */ = {
+		DFC7CD1223EEF6AE0059860D /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				DFCA61EE23EF803E004233AF /* Custom Views */,
 				DF0D800523EF1C7B00980EBE /* Cells */,
 				DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */,
 			);
-			path = "Custom Icons";
+			path = Icons;
 			sourceTree = "<group>";
 		};
 		DFC7CD1323EEF6DF0059860D /* Networking */ = {
@@ -203,6 +206,14 @@
 				DFC7CD4323EF0A4B0059860D /* CustomAPIDecodable.swift */,
 			);
 			path = CustomIconAPI;
+			sourceTree = "<group>";
+		};
+		DFCA61EE23EF803E004233AF /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA61EF23EF8058004233AF /* ShadowView.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 				DF0D800823EF233F00980EBE /* IconTableViewCell.swift in Sources */,
 				DFC7CD4223EF08480059860D /* Request.swift in Sources */,
 				DF0D800323EF153F00980EBE /* Icon.swift in Sources */,
+				DFCA61F023EF8059004233AF /* ShadowView.swift in Sources */,
 				DF0D800023EF13A200980EBE /* URLHelper.swift in Sources */,
 				DFC7CD3823EEFE4B0059860D /* SceneDelegate.swift in Sources */,
 				DFC7CD4423EF0A4B0059860D /* CustomAPIDecodable.swift in Sources */,

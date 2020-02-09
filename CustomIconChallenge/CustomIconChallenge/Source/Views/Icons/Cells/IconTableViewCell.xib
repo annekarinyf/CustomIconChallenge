@@ -15,9 +15,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGV-36-ETl">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGV-36-ETl" customClass="ShadowView" customModule="CustomIconChallenge" customModuleProvider="target">
                         <rect key="frame" x="8" y="8" width="304" height="76"/>
                         <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="JaE-GO-gUO">
+                                <rect key="frame" x="20.5" y="28" width="20" height="20"/>
+                            </activityIndicatorView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S3O-43-A8E">
                                 <rect key="frame" x="8" y="15.5" width="288" height="45"/>
                                 <subviews>
@@ -59,6 +62,8 @@
                             <constraint firstAttribute="trailing" secondItem="S3O-43-A8E" secondAttribute="trailing" constant="8" id="7uK-6u-R94"/>
                             <constraint firstAttribute="bottom" secondItem="S3O-43-A8E" secondAttribute="bottom" constant="15.5" id="9Jm-DV-EmZ"/>
                             <constraint firstItem="S3O-43-A8E" firstAttribute="top" secondItem="GGV-36-ETl" secondAttribute="top" constant="15.5" id="Euq-AU-OmD"/>
+                            <constraint firstItem="JaE-GO-gUO" firstAttribute="centerX" secondItem="zyy-Y3-SBp" secondAttribute="centerX" id="FIb-AS-EWR"/>
+                            <constraint firstItem="JaE-GO-gUO" firstAttribute="centerY" secondItem="zyy-Y3-SBp" secondAttribute="centerY" id="fwh-rL-IDK"/>
                             <constraint firstItem="S3O-43-A8E" firstAttribute="leading" secondItem="GGV-36-ETl" secondAttribute="leading" constant="8" id="h0h-TX-FSm"/>
                         </constraints>
                     </view>
@@ -73,6 +78,7 @@
             <connections>
                 <outlet property="containerView" destination="GGV-36-ETl" id="x45-un-gqZ"/>
                 <outlet property="iconImageView" destination="zyy-Y3-SBp" id="3mr-fU-jAt"/>
+                <outlet property="imageLoadingIndicator" destination="JaE-GO-gUO" id="PnS-ur-rP4"/>
                 <outlet property="subtitleLabel" destination="Xaa-sw-eSB" id="WCC-MJ-9CO"/>
                 <outlet property="titleLabel" destination="VMI-qe-2Bg" id="cjZ-wa-0sA"/>
             </connections>

@@ -43,17 +43,6 @@ final class CustomIconsViewController: UIViewController {
         navigationItem.hidesSearchBarWhenScrolling = true
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-
-        let completionHandler: ((UIViewControllerTransitionCoordinatorContext) -> Void) = { [weak self] (context) in
-            guard let strongSelf = self else { return }
-            strongSelf.iconsTableView.reloadData()
-        }
-
-        coordinator.animate(alongsideTransition: nil, completion: completionHandler)
-    }
-    
     // MARK: - SearchResultsController setup
     private func setupSearchController() {
         searchController = UISearchController(searchResultsController: nil)
