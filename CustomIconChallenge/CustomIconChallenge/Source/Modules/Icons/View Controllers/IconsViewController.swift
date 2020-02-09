@@ -12,6 +12,7 @@ import UIKit
 final class IconsViewController: UIViewController {
     
     @IBOutlet private weak var iconsTableView: UITableView!
+    @IBOutlet private weak var emptyStateLabel: UILabel!
     
     private let cellID = "IconTableViewCell"
     private var iconsViewModel = [IconViewModel]()
@@ -64,16 +65,21 @@ final class IconsViewController: UIViewController {
     // MARK: - Data loading
     private func getIconsFromAPI() {
         IconsAPIManager.shared.listCustomIcons { [weak self] (icons, error) in
-            guard let strongSelf = self, let icons = icons, error == nil else {
-                self?.handleGetIconsError(error)
-                self?.refreshControl.endRefreshing()
-                return
+            guard let strongSelf = self else { return }
+            
+            if let error = error {
+                strongSelf.handleGetIconsError(error)
             }
             
             strongSelf.iconsViewModel = icons.map { IconViewModel(icon: $0) }
+            strongSelf.setEmptyState(icons.isEmpty)
             strongSelf.refreshControl.endRefreshing()
             strongSelf.iconsTableView.reloadData()
         }
+    }
+    
+    private func setEmptyState(_ isEmpty: Bool) {
+        emptyStateLabel.isHidden = !isEmpty
     }
     
     // MARK: - Data filtering
@@ -86,10 +92,7 @@ final class IconsViewController: UIViewController {
     
     // MARK: - Errors handling
     private func handleGetIconsError(_ error: NetworkError?) {
-        let title = NSLocalizedString("Error", comment: "Alert Title")
-        let errorMessage = error?.errorMessage
-        
-        AlertHelper.presentOKAlert(in: self, title: title, message: errorMessage)
+        emptyStateLabel.text = error?.errorMessage
     }
 }
 

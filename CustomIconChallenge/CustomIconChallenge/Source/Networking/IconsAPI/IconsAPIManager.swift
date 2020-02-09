@@ -14,10 +14,10 @@ final class IconsAPIManager {
     public static let shared = IconsAPIManager()
     private let request = Request<IconsAPI>()
     
-    func listCustomIcons(completion: @escaping(_ icons: [Icon]?, _ error: NetworkError?) -> Void) {
+    func listCustomIcons(completion: @escaping(_ icons: [Icon], _ error: NetworkError?) -> Void) {
         request.performGET(IconsAPI.listIcons) { (result: IconResult?, error: NetworkError?) in
             guard let icons = result?.icons else {
-                completion(nil, error)
+                completion([], error)
                 return
             }
             completion(icons.map { Icon(from: $0) }, error)

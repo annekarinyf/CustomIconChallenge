@@ -9,10 +9,8 @@
 // Common
 "Custom Icons" = "Custom Icons";
 "Search" = "Search";
-"OK" = "OK";
 
 // Error Messages
-"Error" = "Error";
-"Internet Unavailable Message" = "You are without internet connection. Please try again later.";
+"Internet Unavailable Message" = "You are without an internet connection. Please try again later.";
 "Unknown Error Message" = "Sorry, it's not possible to process your request. Please try again later.";
 
