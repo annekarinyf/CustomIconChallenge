@@ -17,6 +17,7 @@ final class IconsViewController: UIViewController {
     private var iconsViewModel = [IconViewModel]()
     private var filteredIconsViewModel = [IconViewModel]()
     private var searchController: UISearchController?
+    private let refreshControl = UIRefreshControl()
     
     private var isSearching: Bool {
         return !(searchController?.searchBar.text?.isEmpty ?? true)
@@ -30,7 +31,8 @@ final class IconsViewController: UIViewController {
         title = NSLocalizedString("Custom Icons", comment: "View Title")
         
         iconsTableView.register(UINib(nibName: cellID, bundle: nil), forCellReuseIdentifier: cellID)
-        setupSearchController()
+        addSearchController()
+        addRefreshControl()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,7 +41,7 @@ final class IconsViewController: UIViewController {
     }
     
     // MARK: - SearchResultsController setup
-    private func setupSearchController() {
+    private func addSearchController() {
         searchController = UISearchController(searchResultsController: nil)
         searchController?.searchResultsUpdater = self
         searchController?.obscuresBackgroundDuringPresentation = false
@@ -49,15 +51,27 @@ final class IconsViewController: UIViewController {
         definesPresentationContext = true
     }
     
+    // MARK: - Refresh control setup
+    private func addRefreshControl() {
+        refreshControl.addTarget(self, action: #selector(didPullToRefresh), for: .valueChanged)
+        iconsTableView.addSubview(refreshControl)
+    }
+    
+    @objc private func didPullToRefresh() {
+        getIconsFromAPI()
+    }
+    
     // MARK: - Data loading
     private func getIconsFromAPI() {
         IconsAPIManager.shared.listCustomIcons { [weak self] (icons, error) in
             guard let strongSelf = self, let icons = icons, error == nil else {
                 self?.handleGetIconsError(error)
+                self?.refreshControl.endRefreshing()
                 return
             }
             
             strongSelf.iconsViewModel = icons.map { IconViewModel(icon: $0) }
+            strongSelf.refreshControl.endRefreshing()
             strongSelf.iconsTableView.reloadData()
         }
     }
