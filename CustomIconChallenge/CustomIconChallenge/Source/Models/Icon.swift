@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Icon {
+/// Model to represent an icon
+final class Icon {
     let title: String
     let subtitle: String
     private let imageURLString: String

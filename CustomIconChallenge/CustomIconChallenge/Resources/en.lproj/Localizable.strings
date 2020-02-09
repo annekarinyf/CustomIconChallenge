@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  CustomIconChallenge
+
+  Created by Anne Kariny Silva Freitas on 08/02/20.
+  Copyright © 2020 Anne Kariny Silva Freitas. All rights reserved.
+*/
+
+// Common
+"Custom Icons" = "Custom Icons";
+"Search" = "Search";
+
+// Error Messages
+"Internet Unavailable Message" = "You are without an internet connection. Please try again later.";
+"Unknown Error Message" = "Sorry, it's not possible to process your request. Please try again later.";

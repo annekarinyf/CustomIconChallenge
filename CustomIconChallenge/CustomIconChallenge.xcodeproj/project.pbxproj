@@ -12,8 +12,9 @@
 		DF0D800323EF153F00980EBE /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D800223EF153F00980EBE /* Icon.swift */; };
 		DF0D800823EF233F00980EBE /* IconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0D800623EF233F00980EBE /* IconTableViewCell.swift */; };
 		DF0D800923EF233F00980EBE /* IconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0D800723EF233F00980EBE /* IconTableViewCell.xib */; };
+		DF18B20B23EF6B2000305570 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF18B20D23EF6B2000305570 /* Localizable.strings */; };
 		DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCF823EEE5410059860D /* AppDelegate.swift */; };
-		DFC7CCFD23EEE5420059860D /* CustomIconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */; };
+		DFC7CCFD23EEE5420059860D /* IconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CCFC23EEE5420059860D /* IconsViewController.swift */; };
 		DFC7CD0023EEE5420059860D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CCFE23EEE5420059860D /* Main.storyboard */; };
 		DFC7CD0223EEE5440059860D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CD0123EEE5440059860D /* Assets.xcassets */; };
 		DFC7CD0523EEE5440059860D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFC7CD0323EEE5440059860D /* LaunchScreen.storyboard */; };
@@ -21,10 +22,11 @@
 		DFC7CD3823EEFE4B0059860D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3723EEFE4B0059860D /* SceneDelegate.swift */; };
 		DFC7CD3A23EF05B00059860D /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3923EF05B00059860D /* NetworkProtocol.swift */; };
 		DFC7CD3C23EF05D60059860D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3B23EF05D60059860D /* NetworkError.swift */; };
-		DFC7CD3E23EF07390059860D /* CustomIconEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3D23EF07390059860D /* CustomIconEndpoint.swift */; };
-		DFC7CD4023EF080F0059860D /* CustomIconAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3F23EF080F0059860D /* CustomIconAPIManager.swift */; };
+		DFC7CD3E23EF07390059860D /* IconsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3D23EF07390059860D /* IconsEndpoint.swift */; };
+		DFC7CD4023EF080F0059860D /* IconsAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD3F23EF080F0059860D /* IconsAPIManager.swift */; };
 		DFC7CD4223EF08480059860D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD4123EF08480059860D /* Request.swift */; };
-		DFC7CD4423EF0A4B0059860D /* CustomAPIDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD4323EF0A4B0059860D /* CustomAPIDecodable.swift */; };
+		DFC7CD4423EF0A4B0059860D /* IconAPIDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC7CD4323EF0A4B0059860D /* IconAPIDecodable.swift */; };
+		DFCA61F023EF8059004233AF /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCA61EF23EF8058004233AF /* ShadowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +35,11 @@
 		DF0D800223EF153F00980EBE /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		DF0D800623EF233F00980EBE /* IconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTableViewCell.swift; sourceTree = "<group>"; };
 		DF0D800723EF233F00980EBE /* IconTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IconTableViewCell.xib; sourceTree = "<group>"; };
+		DF18B20C23EF6B2000305570 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DFABA6C523EFA31E00148B7B /* CustomIconChallenge.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomIconChallenge.entitlements; sourceTree = "<group>"; };
 		DFC7CCF523EEE5410059860D /* CustomIconChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomIconChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFC7CCF823EEE5410059860D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIconsViewController.swift; sourceTree = "<group>"; };
+		DFC7CCFC23EEE5420059860D /* IconsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsViewController.swift; sourceTree = "<group>"; };
 		DFC7CCFF23EEE5420059860D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFC7CD0123EEE5440059860D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFC7CD0423EEE5440059860D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,10 +48,11 @@
 		DFC7CD3723EEFE4B0059860D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DFC7CD3923EF05B00059860D /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 		DFC7CD3B23EF05D60059860D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		DFC7CD3D23EF07390059860D /* CustomIconEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIconEndpoint.swift; sourceTree = "<group>"; };
-		DFC7CD3F23EF080F0059860D /* CustomIconAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIconAPIManager.swift; sourceTree = "<group>"; };
+		DFC7CD3D23EF07390059860D /* IconsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsEndpoint.swift; sourceTree = "<group>"; };
+		DFC7CD3F23EF080F0059860D /* IconsAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsAPIManager.swift; sourceTree = "<group>"; };
 		DFC7CD4123EF08480059860D /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		DFC7CD4323EF0A4B0059860D /* CustomAPIDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAPIDecodable.swift; sourceTree = "<group>"; };
+		DFC7CD4323EF0A4B0059860D /* IconAPIDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconAPIDecodable.swift; sourceTree = "<group>"; };
+		DFCA61EF23EF8058004233AF /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +66,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF0D800123EF152C00980EBE /* Model */ = {
+		DF0D800123EF152C00980EBE /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				DF0D800223EF153F00980EBE /* Icon.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DF0D800523EF1C7B00980EBE /* Cells */ = {
@@ -76,6 +81,22 @@
 				DF0D800723EF233F00980EBE /* IconTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DF18B20823EF6A6F00305570 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF18B20D23EF6B2000305570 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF95EEF723EF8845008597B0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFC7CCFC23EEE5420059860D /* IconsViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		DFC7CCEC23EEE5410059860D = {
@@ -99,27 +120,28 @@
 			children = (
 				DFC7CD0D23EEF5C00059860D /* Source */,
 				DFC7CD1023EEF63E0059860D /* Storyboards */,
+				DF18B20823EF6A6F00305570 /* Resources */,
 				DFC7CD0123EEE5440059860D /* Assets.xcassets */,
 				DFC7CD0623EEE5440059860D /* Info.plist */,
+				DFABA6C523EFA31E00148B7B /* CustomIconChallenge.entitlements */,
 			);
 			path = CustomIconChallenge;
 			sourceTree = "<group>";
 		};
-		DFC7CD0C23EEF50B0059860D /* View Model */ = {
+		DFC7CD0C23EEF50B0059860D /* View Models */ = {
 			isa = PBXGroup;
 			children = (
 				DF0D7FFD23EF113300980EBE /* IconViewModel.swift */,
 			);
-			path = "View Model";
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 		DFC7CD0D23EEF5C00059860D /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				DFC7CD0E23EEF5D50059860D /* Application */,
-				DF0D800123EF152C00980EBE /* Model */,
-				DFC7CD1123EEF6920059860D /* Views */,
-				DFC7CD0C23EEF50B0059860D /* View Model */,
+				DF0D800123EF152C00980EBE /* Models */,
+				DFC7CD1123EEF6920059860D /* Modules */,
 				DFC7CD1323EEF6DF0059860D /* Networking */,
 			);
 			path = Source;
@@ -143,27 +165,29 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		DFC7CD1123EEF6920059860D /* Views */ = {
+		DFC7CD1123EEF6920059860D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				DFC7CD1223EEF6AE0059860D /* Custom Icons */,
+				DFC7CD1223EEF6AE0059860D /* Icons */,
 			);
-			path = Views;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		DFC7CD1223EEF6AE0059860D /* Custom Icons */ = {
+		DFC7CD1223EEF6AE0059860D /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				DFCA61EE23EF803E004233AF /* Custom Views */,
 				DF0D800523EF1C7B00980EBE /* Cells */,
-				DFC7CCFC23EEE5420059860D /* CustomIconsViewController.swift */,
+				DF95EEF723EF8845008597B0 /* View Controllers */,
+				DFC7CD0C23EEF50B0059860D /* View Models */,
 			);
-			path = "Custom Icons";
+			path = Icons;
 			sourceTree = "<group>";
 		};
 		DFC7CD1323EEF6DF0059860D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				DFC7CD1423EEF9C40059860D /* CustomIconAPI */,
+				DFC7CD1423EEF9C40059860D /* IconsAPI */,
 				DFC7CD1523EEFA000059860D /* Reachability.swift */,
 				DFC7CD4123EF08480059860D /* Request.swift */,
 				DFC7CD3923EF05B00059860D /* NetworkProtocol.swift */,
@@ -173,14 +197,22 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		DFC7CD1423EEF9C40059860D /* CustomIconAPI */ = {
+		DFC7CD1423EEF9C40059860D /* IconsAPI */ = {
 			isa = PBXGroup;
 			children = (
-				DFC7CD3D23EF07390059860D /* CustomIconEndpoint.swift */,
-				DFC7CD3F23EF080F0059860D /* CustomIconAPIManager.swift */,
-				DFC7CD4323EF0A4B0059860D /* CustomAPIDecodable.swift */,
+				DFC7CD3D23EF07390059860D /* IconsEndpoint.swift */,
+				DFC7CD3F23EF080F0059860D /* IconsAPIManager.swift */,
+				DFC7CD4323EF0A4B0059860D /* IconAPIDecodable.swift */,
 			);
-			path = CustomIconAPI;
+			path = IconsAPI;
+			sourceTree = "<group>";
+		};
+		DFCA61EE23EF803E004233AF /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFCA61EF23EF8058004233AF /* ShadowView.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF18B20B23EF6B2000305570 /* Localizable.strings in Resources */,
 				DFC7CD0523EEE5440059860D /* LaunchScreen.storyboard in Resources */,
 				DFC7CD0223EEE5440059860D /* Assets.xcassets in Resources */,
 				DF0D800923EF233F00980EBE /* IconTableViewCell.xib in Resources */,
@@ -255,26 +288,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFC7CCFD23EEE5420059860D /* CustomIconsViewController.swift in Sources */,
+				DFC7CCFD23EEE5420059860D /* IconsViewController.swift in Sources */,
 				DFC7CCF923EEE5420059860D /* AppDelegate.swift in Sources */,
 				DFC7CD3A23EF05B00059860D /* NetworkProtocol.swift in Sources */,
 				DF0D7FFE23EF113300980EBE /* IconViewModel.swift in Sources */,
 				DFC7CD3C23EF05D60059860D /* NetworkError.swift in Sources */,
-				DFC7CD3E23EF07390059860D /* CustomIconEndpoint.swift in Sources */,
+				DFC7CD3E23EF07390059860D /* IconsEndpoint.swift in Sources */,
 				DFC7CD1623EEFA000059860D /* Reachability.swift in Sources */,
-				DFC7CD4023EF080F0059860D /* CustomIconAPIManager.swift in Sources */,
+				DFC7CD4023EF080F0059860D /* IconsAPIManager.swift in Sources */,
 				DF0D800823EF233F00980EBE /* IconTableViewCell.swift in Sources */,
 				DFC7CD4223EF08480059860D /* Request.swift in Sources */,
 				DF0D800323EF153F00980EBE /* Icon.swift in Sources */,
+				DFCA61F023EF8059004233AF /* ShadowView.swift in Sources */,
 				DF0D800023EF13A200980EBE /* URLHelper.swift in Sources */,
 				DFC7CD3823EEFE4B0059860D /* SceneDelegate.swift in Sources */,
-				DFC7CD4423EF0A4B0059860D /* CustomAPIDecodable.swift in Sources */,
+				DFC7CD4423EF0A4B0059860D /* IconAPIDecodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DF18B20D23EF6B2000305570 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF18B20C23EF6B2000305570 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		DFC7CCFE23EEE5420059860D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,7 +454,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomIconChallenge/CustomIconChallenge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = F476P237J6;
 				INFOPLIST_FILE = CustomIconChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -421,6 +465,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Anne.CustomIconChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,7 +475,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomIconChallenge/CustomIconChallenge.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = F476P237J6;
 				INFOPLIST_FILE = CustomIconChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -439,6 +486,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Anne.CustomIconChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

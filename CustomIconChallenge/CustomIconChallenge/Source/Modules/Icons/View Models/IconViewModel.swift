@@ -9,7 +9,8 @@
 import Foundation
 import UIKit
 
-class IconViewModel {
+/// The view-model to prepare icon's data to be presented on IconsViewController
+final class IconViewModel {
     private var icon: Icon
     var image: UIImage?
     
@@ -31,21 +32,22 @@ class IconViewModel {
     func getImage(_ completion: @escaping (UIImage?) -> Void) {
         if let image = image {
             completion(image)
-        } else {
-            guard let imageURL = icon.url else {
+            return
+        }
+        
+        guard let imageURL = icon.url else {
+            completion(nil)
+            return
+        }
+        
+        URLHelper.downloadImage(withURL: imageURL) { [weak self] image in
+            guard let strongSelf = self else {
                 completion(nil)
                 return
             }
             
-            URLHelper.downloadImage(withURL: imageURL) { [weak self] image in
-                guard let strongSelf = self else {
-                    completion(nil)
-                    return
-                }
-                
-                strongSelf.image = image
-                completion(image)
-            }
+            strongSelf.image = image
+            completion(image)
         }
     }
 }

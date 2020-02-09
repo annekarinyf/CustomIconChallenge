@@ -1,5 +1,5 @@
 //
-//  CustomIconEndpoint.swift
+//  IconEndpoint.swift
 //  CustomIconChallenge
 //
 //  Created by Anne Kariny Silva Freitas on 08/02/20.
@@ -8,15 +8,16 @@
 
 import Foundation
 
-enum CustomIconAPI {
+/// Define icon's API funcionalities and endpoint variables
+enum IconsAPI {
     case listIcons
 }
 
-extension CustomIconAPI: EndPointType {
+extension IconsAPI: EndPointType {
     static let address = "https://irapps.github.io/wzpsolutions/tests/ios-custom-icons/IconsData.json"
     
     var path: String {
-        return CustomIconAPI.address
+        return IconsAPI.address
     }
     
     var url: URL? {
